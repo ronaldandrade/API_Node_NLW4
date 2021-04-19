@@ -1,0 +1,36 @@
+Criando uma API de envio de emails.
+
+Database
+ORMCONFIG.json {https://typeorm.io/#/using-ormconfig}
+Migrations - para criar o arquivo de migrations de usuario na pasta correta 
+
+Cria o aquivo de user na pasta migrations (Dar o diretorio na ormconfig.json na root)
+    ## yarn typeorm migration:create -n CreateUser ## 
+
+Rodar as migrations e criar as tabelas
+    ##yarn typeorm migration:run##
+
+
+    dentro do arquivo ORMCONFIG.JSON na raiz do projeto.
+    segue exemplo "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+
+## UUID ## 
+
+Criador de chave de ID
+
+Criado Migracao e repositorys de Pesquisa (async function Show em SurveysControllers) 
+
+
+### Testes de aplicacao ###
+
+1 - Teste unitario
+
+2 - Testes de integracao
+
+-> request -> routes -> controllers -> repositorys
+<- repository <- controller <-  response
+
+
+
